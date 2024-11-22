@@ -23,18 +23,15 @@ const Header = () => {
   //menu drawer
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      {" "}
-      <Link to="/">
-        <Typography
-          color={"goldenrod"}
-          variant="h6"
-          component="div"
-          sx={{ flexGrow: 1, my: 2 , textDecoration:'none'}}
-        >
-          <FastfodIcon />
-          ChopNChat
-        </Typography>{" "}
-      </Link>
+      <Typography
+        color={"goldenrod"}
+        variant="h6"
+        component="div"
+        sx={{ flexGrow: 1, my: 2, textDecoration: "none" }}
+      >
+        <FastfodIcon />
+        ChopNChat
+      </Typography>{" "}
       <Divider />
       <ul className="mobile-navigation">
         <li>
@@ -70,18 +67,17 @@ const Header = () => {
             >
               <MenuIcon />
             </IconButton>
-            <Link to="/">
+            
               <Typography
                 color={"goldenrod"}
                 variant="h6"
                 component="div"
-
-                sx={{ flexGrow: 1, textDecoration:'none'}}
+                sx={{ flexGrow: 1, textDecoration: "none" }}
               >
                 <FastfodIcon />
                 ChopNChat
               </Typography>
-            </Link>
+            
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <ul className="navigation-menu">
                 <li>
